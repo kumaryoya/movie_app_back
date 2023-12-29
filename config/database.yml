@@ -15,5 +15,8 @@ test:
   database: movie_app_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: movie_app_db_tww0
+  username: movie_app_db
   url: <%= ENV['DATABASE_URL'] %>
