@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Movie.create!(
+  [
+    {
+      name: 'おおくま',
+      comment: '神映画です！',
+      title: 'グレイテスト・ショーマン',
+      poster_path: '/jVGK50VhFOXgXkmcOFLrsPrtqJq.jpg',
+      release_date: '2017-12-20',
+      overview: '19世紀、ニューヨーク。貧しい生まれのバーナムは上流家庭の令嬢チャリティを妻に迎えたが失業し、大衆向けの博物館を開業。
+                しかし客は集まらず、バーナムはユニークな人々を博物館に集め、歌あり踊りありで空中ぶらんこや動物の曲芸も見せるショーを売りにするとたちまち大成功。
+                さらにバーナムは社会に認められたいという野心のため、ヨーロッパの女性歌手リンドを米国に招くが、家族やショーの出演者たちと心がすれ違いだす。'
+    }
+  ]
+)
