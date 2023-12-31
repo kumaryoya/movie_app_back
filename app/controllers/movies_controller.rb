@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :update, :destroy]
 
   def index
-    @movies = Movie.all
+    @movies = Movie.all.order('id ASC')
     render json: @movies
   end
 
